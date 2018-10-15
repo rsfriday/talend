@@ -1,0 +1,23 @@
+{
+  "name": "talend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsfriday/talend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsfriday/talend/issues"
+  },
+  "homepage": "https://github.com/rsfriday/talend#readme"
+}
