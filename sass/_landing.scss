@@ -9,13 +9,15 @@
   align-items: center;
 
   .people {
+    width: 50%;
+
     .row {
       display: flex;
 
       .card {
         height: 30rem;
         width: 30rem;
-        border: .4rem solid grey;
+        border: .4rem solid $bg-grey;
         margin-right: .4rem;
       }
 
@@ -58,7 +60,7 @@
 
       i {
         font-size: 5.2rem;
-        color: grey;
+        color: $text-grey;
 
         &:hover {
             cursor: pointer;
@@ -68,7 +70,7 @@
       span {
         font-size: 3.2rem;
         margin: 0 4rem;
-        color: white;
+        color: $text-white;
       }
     }
 
@@ -76,7 +78,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: grey;
+        color: $text-grey;
         margin-top: 1.5rem;
 
         .name {

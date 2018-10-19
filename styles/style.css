@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,700");
 *,
 *::before,
 *::after {
@@ -10,7 +10,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'IBM Plex Serif', serif; }
+  font-family: 'IBM Plex Serif', serif;
+  box-sizing: border-box; }
 
 .main {
   height: 100vh;
@@ -21,45 +22,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .main .people .row {
-    display: flex; }
-    .main .people .row .card {
-      height: 30rem;
-      width: 30rem;
-      border: .4rem solid grey;
-      margin-right: .4rem; }
-    .main .people .row .person-1 {
-      background: url("../images/people/pexels-photo-220453.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row .person-2 {
-      background: url("../images/people/pexels-photo-324658.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row .person-3 {
-      background: url("../images/people/pexels-photo-415829.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row .person-4 {
-      background: url("../images/people/pexels-photo-937481.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row .person-5 {
-      background: url("../images/people/pexels-photo-462680.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row .person-6 {
-      background: url("../images/people/pexels-photo-712521.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
-    .main .people .row:first-child {
-      margin-bottom: .4rem; }
+  .main .people {
+    width: 50%; }
+    .main .people .row {
+      display: flex; }
+      .main .people .row .card {
+        height: 30rem;
+        width: 30rem;
+        border: 0.4rem solid #818181;
+        margin-right: .4rem; }
+      .main .people .row .person-1 {
+        background: url("../images/people/pexels-photo-220453.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row .person-2 {
+        background: url("../images/people/pexels-photo-324658.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row .person-3 {
+        background: url("../images/people/pexels-photo-415829.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row .person-4 {
+        background: url("../images/people/pexels-photo-937481.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row .person-5 {
+        background: url("../images/people/pexels-photo-462680.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row .person-6 {
+        background: url("../images/people/pexels-photo-712521.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .main .people .row:first-child {
+        margin-bottom: .4rem; }
   .main .navigation {
     margin-left: 5rem; }
     .main .navigation .page-slider {
@@ -67,19 +70,73 @@ body {
       align-items: center; }
       .main .navigation .page-slider i {
         font-size: 5.2rem;
-        color: grey; }
+        color: #adadad; }
         .main .navigation .page-slider i:hover {
           cursor: pointer; }
       .main .navigation .page-slider span {
         font-size: 3.2rem;
         margin: 0 4rem;
-        color: white; }
+        color: #fff; }
     .main .navigation .people-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: grey;
+      color: #adadad;
       margin-top: 1.5rem; }
       .main .navigation .people-list .name {
         font-size: 2.4rem;
         text-transform: uppercase; }
+
+.profile {
+  background-color: rgba(129, 129, 129, 0.4);
+  width: 50%;
+  height: 80%;
+  padding: 2rem; }
+  .profile .row {
+    display: flex;
+    position: relative; }
+    .profile .row .card {
+      height: 30rem;
+      width: 30rem;
+      margin-right: 0.4rem; }
+    .profile .row .person-1 {
+      background: url("../images/people/pexels-photo-220453.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .profile .row .info {
+      width: 68%;
+      margin-left: 2rem; }
+      .profile .row .info .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline; }
+        .profile .row .info .title .name {
+          font-size: 3rem;
+          color: #fff; }
+        .profile .row .info .title .age-job {
+          font-size: 2.5rem;
+          margin-left: 1rem;
+          color: #adadad; }
+      .profile .row .info .introduction-p1,
+      .profile .row .info .introduction-p2 {
+        color: #fff;
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        font-weight: 300; }
+      .profile .row .info .blog {
+        text-transform: uppercase;
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700; }
+        .profile .row .info .blog:link, .profile .row .info .blog:visited {
+          color: #fff; }
+    .profile .row .fa-window-close {
+      color: #fff;
+      font-size: 2.5rem;
+      position: absolute;
+      top: -1rem;
+      right: -1rem; }
+      .profile .row .fa-window-close:hover {
+        cursor: pointer; }

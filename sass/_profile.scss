@@ -1,0 +1,75 @@
+.profile {
+  background-color: rgba($color: $bg-grey, $alpha: 0.4);
+  width: 50%;
+  height: 80%;
+  padding: 2rem;
+
+  .row {
+    display: flex;
+    position: relative;
+
+    .card {
+      height: 30rem;
+      width: 30rem;
+      margin-right: 0.4rem;
+    }
+
+    .person-1 {
+      @include setCardBg("../images/people/pexels-photo-220453.jpeg");
+    }
+
+    .info {
+      width: 68%;
+      margin-left: 2rem;
+
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        .name {
+          font-size: 3rem;
+          color: $text-white;
+        }
+
+        .age-job {
+          font-size: 2.5rem;
+          margin-left: 1rem;
+          color: $text-grey;
+        }
+      }
+
+      .introduction-p1,
+      .introduction-p2 {
+        color: $text-white;
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        font-weight: 300;
+      }
+
+      .blog {
+          text-transform: uppercase;
+          margin-top: 1rem;
+          display: inline-block;
+          font-size: 1.6rem;
+          font-weight: 700;
+          
+          &:link,
+          &:visited {
+            color: $text-white;
+          }
+      }
+    }
+
+    .fa-window-close {
+        color: $text-white;
+        font-size: 2.5rem;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+  }
+}
