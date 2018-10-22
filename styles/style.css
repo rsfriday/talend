@@ -63,7 +63,10 @@ body {
         background-repeat: no-repeat; }
       .main .people .row:first-child {
         margin-bottom: .4rem; }
-  .main .content {
+  .main .contributors {
+    width: 30%;
+    margin-top: -3rem; }
+  .main .idea {
     width: 30%;
     margin-top: -3rem; }
   .main .navigation {
