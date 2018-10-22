@@ -63,6 +63,9 @@ body {
         background-repeat: no-repeat; }
       .main .people .row:first-child {
         margin-bottom: .4rem; }
+  .main .content {
+    width: 30%;
+    margin-top: -3rem; }
   .main .navigation {
     margin-left: 5rem; }
     .main .navigation .page-slider {
@@ -86,7 +89,17 @@ body {
       .main .navigation .people-list .name {
         font-size: 2.4rem;
         text-transform: uppercase; }
-
+  ul {
+    list-style-type: none;
+    font-size: 14px;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+  }
+  ul li{
+    margin:0 10px 14px 0;
+    vertical-align:top
+  }
 .profile {
   background-color: rgba(129, 129, 129, 0.4);
   width: 50%;
