@@ -140,3 +140,8 @@ body {
       right: -1rem; }
       .profile .row .fa-window-close:hover {
         cursor: pointer; }
+  .profile .roadmap {
+    margin-top: 1rem; }
+    .profile .roadmap .roadmap-header {
+      color: #adadad;
+      font-size: 2rem; }
