@@ -63,6 +63,14 @@ body {
         background-repeat: no-repeat; }
       .main .people .row:first-child {
         margin-bottom: .4rem; }
+  .main .contributors {
+    width: 30%;
+    margin-top: -3rem; }
+  .main .idea {
+    width: 50%;
+    margin-top: 10rem;
+    float: left;
+   }
   .main .navigation {
     margin-left: 5rem; }
     .main .navigation .page-slider {
@@ -86,7 +94,30 @@ body {
       .main .navigation .people-list .name {
         font-size: 2.4rem;
         text-transform: uppercase; }
-
+    .main .idea p {
+      font-size: 14px;
+      color: #fff;
+    }
+    .main .idea h1 {
+      line-height: 70px;
+      color: #fff;
+      font-size: 32px;
+    }
+    .main .idea img {
+        max-width:95%;
+        max-height:95%;
+    }
+  ul {
+    list-style-type: none;
+    font-size: 14px;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+  }
+  ul li{
+    margin:0 10px 14px 0;
+    vertical-align:top
+  }
 .profile {
   background-color: rgba(129, 129, 129, 0.4);
   width: 50%;
