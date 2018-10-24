@@ -12,8 +12,28 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/favicon-resistance.ico">
     <script src="scripts/stefan_scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/jquery.background-video.js"></script>
 </head>
 <body>
+<div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+  <video class="jquery-background-video" autoplay muted loop poster="videos/Hill.jpg">
+    <source src="videos/Hill.mp4" type="video/mp4">
+    <source src="videos/Hill.webm" type="video/webm">
+    <source src="videos/Hill.ogv" type="video/ogg">
+  </video>
+	  <div class="video-overlay"></div>
+  	<div class="page-width">
+		    <div class="video-hero--content">
+			      <h2>blog</h2>
+			      <p></p>
+    		</div>
+  	</div>
+</div>
+<!-- End video hero -->
+
+<div id="content">
+
   <div class="wrapper">
 
           <div class="card radius shadowDepth1">
@@ -55,7 +75,7 @@
             </div>
           </div>
         </div>
-
+      </div>
 </body>
 
 </html>
