@@ -19,68 +19,68 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr 100rem 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-column-gap: 5rem;
+  grid-template-areas: ". . . ." ". people navigation ." ". . . ."; }
   .main .people {
-    width: 50%; }
-    .main .people .row {
-      display: flex; }
-      .main .people .row .card {
-        height: 30rem;
-        width: 30rem;
-        border: 0.4rem solid #818181;
-        margin-right: .4rem; }
-      .main .people .row .person-1 {
-        background: url("../images/people/pexels-photo-220453.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row .person-2 {
-        background: url("../images/people/pexels-photo-324658.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row .person-3 {
-        background: url("../images/people/pexels-photo-415829.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row .person-4 {
-        background: url("../images/people/pexels-photo-937481.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row .person-5 {
-        background: url("../images/people/pexels-photo-462680.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row .person-6 {
-        background: url("../images/people/pexels-photo-712521.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      .main .people .row:first-child {
-        margin-bottom: .4rem; }
-  .main .contributors {
-    width: 30%;
-    margin-top: -3rem; }
-  .main .idea {
-    width: 50%;
-    margin-top: 10rem;
-    float: left;
-   }
+    grid-area: people;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem; }
+    .main .people .card {
+      border: 0.4rem solid #818181; }
+    .main .people .person-1 {
+      background: url("../images/people/pexels-photo-220453.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main .people .person-2 {
+      background: url("../images/people/pexels-photo-324658.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main .people .person-3 {
+      background: url("../images/people/pexels-photo-415829.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main .people .person-4 {
+      background: url("../images/people/pexels-photo-937481.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main .people .person-5 {
+      background: url("../images/people/pexels-photo-462680.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main .people .person-6 {
+      background: url("../images/people/pexels-photo-712521.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
   .main .navigation {
-    margin-left: 5rem; }
+    grid-area: navigation;
+    justify-self: center;
+    margin-top: 5rem; }
     .main .navigation .page-slider {
       display: flex;
       align-items: center; }
-      .main .navigation .page-slider i {
-        font-size: 5.2rem;
-        color: #adadad; }
-        .main .navigation .page-slider i:hover {
-          cursor: pointer; }
+      .main .navigation .page-slider .arrow-left {
+        background: url(../images/icons/angle-pointing-to-left.svg);
+        background-size: contain;
+        background-position: center;
+        height: 4rem;
+        width: 4rem; }
+      .main .navigation .page-slider .arrow-right {
+        background: url(../images/icons/angle-arrow-pointing-to-right.svg);
+        background-size: contain;
+        background-position: center;
+        height: 4rem;
+        width: 4rem; }
       .main .navigation .page-slider span {
         font-size: 3.2rem;
         margin: 0 4rem;
@@ -94,30 +94,7 @@ body {
       .main .navigation .people-list .name {
         font-size: 2.4rem;
         text-transform: uppercase; }
-    .main .idea p {
-      font-size: 14px;
-      color: #fff;
-    }
-    .main .idea h1 {
-      line-height: 70px;
-      color: #fff;
-      font-size: 32px;
-    }
-    .main .idea img {
-        max-width:95%;
-        max-height:95%;
-    }
-  ul {
-    list-style-type: none;
-    font-size: 14px;
-    margin: 10px;
-    padding: 20px;
-    color: #fff;
-  }
-  ul li{
-    margin:0 10px 14px 0;
-    vertical-align:top
-  }
+
 .profile {
   background-color: rgba(129, 129, 129, 0.4);
   width: 50%;

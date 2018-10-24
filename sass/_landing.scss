@@ -4,67 +4,74 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 100rem 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-column-gap: 5rem;
+  grid-template-areas:
+    ". . . ."
+    ". people navigation ."
+    ". . . .";
 
   .people {
-    width: 50%;
+    grid-area: people;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
 
-    .row {
-      display: flex;
+    .card {
+      border: 0.4rem solid $bg-grey;
+    }
 
-      .card {
-        height: 30rem;
-        width: 30rem;
-        border: .4rem solid $bg-grey;
-        margin-right: .4rem;
-      }
+    .person-1 {
+      @include setCardBg("../images/people/pexels-photo-220453.jpeg");
+    }
 
-      .person-1 {
-        @include setCardBg("../images/people/pexels-photo-220453.jpeg");
-      }
+    .person-2 {
+      @include setCardBg("../images/people/pexels-photo-324658.jpeg");
+    }
 
-      .person-2 {
-        @include setCardBg("../images/people/pexels-photo-324658.jpeg");
-      }
+    .person-3 {
+      @include setCardBg("../images/people/pexels-photo-415829.jpeg");
+    }
 
-      .person-3 {
-        @include setCardBg("../images/people/pexels-photo-415829.jpeg");
-      }
+    .person-4 {
+      @include setCardBg("../images/people/pexels-photo-937481.jpeg");
+    }
 
-      .person-4 {
-        @include setCardBg("../images/people/pexels-photo-937481.jpeg");
-      }
+    .person-5 {
+      @include setCardBg("../images/people/pexels-photo-462680.jpeg");
+    }
 
-      .person-5 {
-        @include setCardBg("../images/people/pexels-photo-462680.jpeg");
-      }
-
-      .person-6 {
-        @include setCardBg("../images/people/pexels-photo-712521.jpeg");
-      }
-
-      &:first-child {
-        margin-bottom: .4rem;
-      }
+    .person-6 {
+      @include setCardBg("../images/people/pexels-photo-712521.jpeg");
     }
   }
 
   .navigation {
-    margin-left: 5rem;
+    grid-area: navigation;
+    justify-self: center;
+    margin-top: 5rem;
 
     .page-slider {
       display: flex;
       align-items: center;
 
-      i {
-        font-size: 5.2rem;
-        color: $text-grey;
+      .arrow-left {
+        background: url(../images/icons/angle-pointing-to-left.svg);
+        background-size: contain;
+        background-position: center;
+        height: 4rem;
+        width: 4rem;
+      }
 
-        &:hover {
-            cursor: pointer;
-        }
+      .arrow-right {
+        background: url(../images/icons/angle-arrow-pointing-to-right.svg);
+        background-size: contain;
+        background-position: center;
+        height: 4rem;
+        width: 4rem;
       }
 
       span {
@@ -75,16 +82,16 @@
     }
 
     .people-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $text-grey;
-        margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $text-grey;
+      margin-top: 1.5rem;
 
-        .name {
-            font-size: 2.4rem;
-            text-transform: uppercase;
-        }
+      .name {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+      }
     }
   }
 }
