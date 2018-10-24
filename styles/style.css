@@ -20,10 +20,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 1fr 100rem 1fr 1fr;
-  grid-template-rows: 1fr 10rem 65rem 5rem 1fr;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
   grid-column-gap: 5rem;
-  grid-template-areas: ". . . ." ". . . ." ". main-left navigation ." ". . . ." ". . . ."; }
+  grid-template-areas: ". . . ." ". main-left navigation ." ". . . ."; }
   .main .main-left {
     grid-area: main-left;
     display: grid;
@@ -96,7 +96,7 @@ body {
         text-transform: uppercase; }
 
 .profile {
-  grid-area: 2 / 2 / 5 / 3;
+  grid-area: main-left;
   background-color: rgba(129, 129, 129, 0.4);
   padding: 2rem; }
   .profile .row {
@@ -200,3 +200,7 @@ body {
     .profile .footer .shipping {
       text-transform: uppercase;
       font-weight: bold; }
+
+@media only screen and (max-width: 1440px) {
+  .main {
+    grid-template-columns: .1fr 5fr 1fr .1fr; } }
