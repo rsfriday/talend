@@ -20,9 +20,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr 1fr;
   grid-template-rows: 1fr 10fr 1fr;
-  grid-column-gap: 5rem;
   grid-template-areas: ". . . ." ". main-left navigation ." ". . . ."; }
   .main .main-left {
     grid-area: main-left;
@@ -65,7 +64,8 @@ body {
   .main .navigation {
     grid-area: navigation;
     justify-self: center;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    padding: 0 5rem; }
     .main .navigation .page-slider {
       display: flex;
       align-items: center; }
@@ -202,5 +202,40 @@ body {
       font-weight: bold; }
 
 @media only screen and (max-width: 1440px) {
+  html {
+    font-size: 55%; } }
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 54%; } }
+
+@media only screen and (max-width: 1180px) {
+  html {
+    font-size: 48%; } }
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%; }
   .main {
-    grid-template-columns: .1fr 5fr 1fr .1fr; } }
+    height: unset; }
+    .main .main-left .card {
+      min-height: 40rem; }
+  .goals .goals-slider {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .goals .goals-slider .goal {
+      margin-top: 2rem; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 39%; }
+  .main {
+    height: unset; }
+    .main .main-left .card {
+      min-height: 52rem; } }
+
+@media only screen and (max-width: 678px) {
+  .main {
+    grid-template-rows: .1fr 1fr .1fr;
+    grid-template-areas: ". navigation navigation ." ". main-left main-left ." ". . . ."; } }

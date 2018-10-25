@@ -1,5 +1,72 @@
 @media only screen and (max-width: 1440px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
   .main {
-    grid-template-columns: .1fr 5fr 1fr .1fr;
+    height: unset;
+    .main-left {
+      .card {
+        min-height: 40rem;
+      }
+    }
+  }
+  
+  .goals {
+    
+    .goals-slider {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .goal {
+        margin-top: 2rem;
+      }
+
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 39%;
+  }
+
+  .main {
+    height: unset;
+    .main-left {
+      .card {
+        min-height: 52rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .main {
+    grid-template-rows: .1fr 1fr .1fr;
+    grid-template-areas:
+      ". navigation navigation ."
+      ". main-left main-left ."
+      ". . . .";
   }
 }
